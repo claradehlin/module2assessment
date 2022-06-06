@@ -125,9 +125,9 @@ const deals = [
 */
 
 //CODE HERE
-let dealsUpdate1  = deals[0].title.replace('15', '10');
+deals[0].title  = deals[0].title.replace('15', '10');
 
-// console.log(dealsUpdate1)
+// console.log(deals[0].title)
 
 
 /*

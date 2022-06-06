@@ -155,14 +155,7 @@ let foodArr = [
 */
 
 //CODE HERE
-function getFoodByTag(tag) {
-    return foodArr.filter(function(food) {
-    
-    })
-}
 
-
-getFoodByTag('popular')
 
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
