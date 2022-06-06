@@ -127,7 +127,7 @@ const deals = [
 //CODE HERE
 deals[0].title  = deals[0].title.replace('15', '10');
 
-// console.log(deals[0].title)
+// console.log(deals)
 
 
 /*
@@ -144,6 +144,6 @@ deals[0].title  = deals[0].title.replace('15', '10');
 */
 
 //CODE HERE
-let dealsUpdate2 = deals[1].desc.replace('March', 'April')
+deals[1].desc = deals[1].desc.replace('March', 'April').trim()
 
-// console.log(dealsUpdate2)
+// console.log(deals)
