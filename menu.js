@@ -196,7 +196,7 @@ const filteredFood = foodArr.filter(callback)
         if it is, return objects whose value for the given
         property is greater than the `number` passed in
 
-        If the type isn't `below`, return objects whose
+        If the type is `below`, return objects whose
         value for the given property is less than the 
         `number` passed in
     
@@ -204,7 +204,16 @@ const filteredFood = foodArr.filter(callback)
 */
 
 //CODE HERE
-
+const filterByProperty = function(property, number, type) {
+    const filteredArr = foodArr.filter((element) => {
+        if (type === 'above') {
+            return element[property] > number
+        } else if (type === 'below') {
+            return element[property] < number
+        }
+    })
+    return filteredArr
+}
 
 /*
     Invoke the `filterByProperty` function passing
@@ -214,3 +223,4 @@ const filteredFood = foodArr.filter(callback)
 */
 
 //CODE HERE
+console.log(filterByProperty('price', 5, 'above'))
