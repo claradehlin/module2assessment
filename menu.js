@@ -155,11 +155,13 @@ let foodArr = [
 */
 
 //CODE HERE
+function callback(element) {
+    return element.tags.includes('cheese')
+}
 
 
-
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
-
+const filteredFood = foodArr.filter(callback)
+// console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
