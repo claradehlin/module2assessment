@@ -35,8 +35,12 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+function callbackFunction(prevValue, currentValue) {
+    return prevValue + currentValue.price
+}
+const summedPrice = cart.reduce(callbackFunction, 0)
 
+// console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -54,7 +58,12 @@ const cart = [
 */
 
 //CODE HERE
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    let total = cartTotal + (tax * cartTotal) - couponValue
+    return total
+}
 
+// console.log(calcFinalPrice(5,1,.05))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -79,7 +88,10 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+    name: string
+    billingAddress: string
+    accountBalanceInDollars: number
+    isRewardsProgramMember: boolean
 */
 
 /*
@@ -88,3 +100,11 @@ const cart = [
 */
 
 //CODE HERE
+const custObj = {
+    name: 'Clara Dehlin',
+    billingAddress: '37 South Sauropod Lane',
+    accountBalanceInDollars: 102.34,
+    isRewardsProgramMember: false
+}
+
+// console.log(custObj);
